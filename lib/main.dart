@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(const SignUpApp());
 
 class SignUpApp extends StatelessWidget {
-  const SignUpApp();
+  const SignUpApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class SignUpApp extends StatelessWidget {
 }
 
 class SignUpScreen extends StatelessWidget {
-  const SignUpScreen();
+  const SignUpScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class SignUpScreen extends StatelessWidget {
 }
 
 class SignUpForm extends StatefulWidget {
-  const SignUpForm();
+  const SignUpForm({Key? key}) : super(key: key);
 
   @override
   _SignupFormState createState() => _SignupFormState();
@@ -126,7 +126,7 @@ class _SignupFormState extends State<SignUpForm> {
 }
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen();
+  const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -142,9 +142,8 @@ class WelcomeScreen extends StatelessWidget {
 class AnimatedProgressIndicator extends StatefulWidget {
   final double value;
 
-  const AnimatedProgressIndicator({
-    required this.value,
-  });
+  const AnimatedProgressIndicator({required this.value, Key? key})
+      : super(key: key);
   @override
   State<StatefulWidget> createState() {
     return _AnimatedProgressIndicatorState();
